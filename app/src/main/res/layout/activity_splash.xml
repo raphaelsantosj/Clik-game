@@ -12,5 +12,13 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+        <ImageView
+            android:id="@+id/logotipo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/logotipo"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="134dp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

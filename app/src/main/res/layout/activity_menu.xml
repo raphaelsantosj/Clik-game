@@ -23,5 +23,19 @@
             android:textSize="20dp"
             android:textColor="#FFFFFF"
             android:background="@drawable/btn_redondo"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:background="#0000"
+            android:gravity="center_horizontal"
+            android:text="Desenvolvido por: DevWolf.com"
+            android:textAllCaps="false"
+            android:textColor="#b2b2b2" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
