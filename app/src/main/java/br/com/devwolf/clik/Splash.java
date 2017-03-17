@@ -1,3 +1,8 @@
+/**
+ * @version Beta
+ * @author Raphael dos Santos Jesus
+ */
+
 package br.com.devwolf.clik;
 
 import android.content.Intent;
@@ -19,6 +24,7 @@ public class Splash extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        //Metodo para mudar activity
         new Handler().postDelayed(new Runnable() {
             /*
              * Exibindo splash com um timer.

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Clik</string>
+    <string name="break_timer_title">cronometro</string>
+    <string name="title_activity_jogo">Jogo</string>
 </resources>
