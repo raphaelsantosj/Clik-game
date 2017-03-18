@@ -12,10 +12,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Random;
+
 public class Jogo extends AppCompatActivity {
 
     Button btnCompartilhar;
     Button btnSair;
+    Button btnSurpresa1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,22 @@ public class Jogo extends AppCompatActivity {
             }
         });
         //Fim metodo Voltar Menu
+
+        //Metodo btnSurpresa1
+        String []surpresa = {"-","+"};
+        Random random = new Random();
+        btnSurpresa1 = (Button) findViewById(R.id.btnSurpresa1);
+
+        //btnSurpresa1.setVisibility(View.INVISIBLE);
+        btnSurpresa1.setText(surpresa[random.nextInt(surpresa.length)]);
+        if(btnSurpresa1.getText().equals("-")){
+            btnSurpresa1.setBackgroundResource(R.drawable.btn_surpresa);
+        }
+        else{
+            btnSurpresa1.setBackgroundResource(R.drawable.btn_surpresa2);
+        }
+
+
 
     }
 }

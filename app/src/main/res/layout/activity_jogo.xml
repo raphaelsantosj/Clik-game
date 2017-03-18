@@ -100,24 +100,23 @@
             android:id="@+id/btnSurpresa1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_surpresa"
-            android:text="Button"
-            android:layout_above="@+id/Footer"
+            android:layout_alignBottom="@+id/linearLayout"
             android:layout_toLeftOf="@+id/btnClik"
             android:layout_toStartOf="@+id/btnClik"
-            android:layout_marginBottom="45dp" />
+            android:layout_weight="1"
+            android:textSize="50dp" />
 
         <Button
             android:id="@+id/btnSurpresa2"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_alignTop="@+id/btnSurpresa1"
+            android:layout_toEndOf="@+id/btnClik"
+            android:layout_toRightOf="@+id/btnClik"
             android:layout_weight="1"
             android:background="@drawable/btn_surpresa"
-            android:text="Button"
-            android:layout_alignTop="@+id/btnSurpresa1"
-            android:layout_toRightOf="@+id/btnClik"
-            android:layout_toEndOf="@+id/btnClik" />
+            android:text="-"
+            android:textSize="50dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,7 +125,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="55dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
 
         </LinearLayout>
 

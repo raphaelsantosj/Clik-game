@@ -16,6 +16,8 @@ import android.widget.Button;
 public class Menu extends AppCompatActivity {
 
     Button btnComecar;
+    Button btnEasterEgg;
+    int contador = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +27,26 @@ public class Menu extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        btnComecar = (Button)findViewById(R.id.btnComecar);
+        btnComecar = (Button) findViewById(R.id.btnComecar);
         btnComecar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent jogo = new Intent(Menu.this, Jogo.class);
                 startActivity(jogo);
-
                 finish();
+            }
+        });
+
+        btnEasterEgg = (Button) findViewById(R.id.btnEasterEgg);
+        btnEasterEgg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contador++;
+                if(contador == 15){
+                    Intent easter_egg = new Intent(Menu.this, EasterEgg.class);
+                    startActivity(easter_egg);
+                    finish();
+                }
             }
         });
     }
